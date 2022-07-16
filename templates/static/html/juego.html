@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMaster</title>
+    <link rel="stylesheet" href="../css/estilogames.css">
+</head>
+
+<body>
+
+    <main>
+        <!--Seccion de Botones donde se encontraran las tarjetas-->
+        <section class="section1">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <h1>Juego de memoria</h1>
+            <!--Creamos la tabla donde estaran almacenadas las cartas-->
+            <table>
+                <tr>
+                    <td><button id="0" oneclick="destapar(0)">Hola</button></td>
+                    <td><button id="1" oneclick="destapar(1)">Hola</button></td>
+                    <td><button id="2" oneclick="destapar(2)">Hola</button></td>
+                    <td><button id="3" oneclick="destapar(3)">Hola</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" oneclick="destapar(4)">Hola</button></td>
+                    <td><button id="5" oneclick="destapar(5)">Hola</button></td>
+                    <td><button id="6" oneclick="destapar(6)">Hola</button></td>
+                    <td><button id="7" oneclick="destapar(7)">Hola</button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" oneclick="destapar(8)">Hola</button></td>
+                    <td><button id="9" oneclick="destapar(9)">Hola</button></td>
+                    <td><button id="10" oneclick="destapar(10)">Hola</button></td>
+                    <td><button id="11" oneclick="destapar(11)">Hola</button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" oneclick="destapar(12)">Hola</button></td>
+                    <td><button id="13" oneclick="destapar(13)">Hola</button></td>
+                    <td><button id="14" oneclick="destapar(14)">Hola</button></td>
+                    <td><button id="15" oneclick="destapar(15)">Hola</button></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <!--Seccion de Estadisticas del juego-->
+        <section class="section2">
+            <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+            <h2 id="tiempo" class="estadisticas">Tiempo: 1 minuto</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Juego Programado por <a href="#">Steveen Sinchiguano</a> y
+            <a href="#">Julissa Renteria</a>
+        </p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
