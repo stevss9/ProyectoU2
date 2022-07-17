@@ -16,11 +16,11 @@ app.secret_key = '090700'
 #Controlador de la ruta inicial
 @app.route('/')
 def Index():
-    return render_template('Index.html')
+    return render_template('Index.html', methods=['GET', 'POST'])
 
-@app.route('/juego')
-def juego():
-    return render_template('juego.html')
+@app.route('/game', methods=['GET', 'POST'])
+def game():
+    return render_template('game.html')
 
 #Main de la app
 if __name__ == '__main__':
